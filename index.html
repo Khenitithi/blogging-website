@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToonVerse - Cartoon Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a class="logo" href="index.html">ToonVerse</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cartoons.html">Cartoons</a>
+      <a href="blog.html">Blog</a>
+      <a href="favorites.html">Favorites</a>
+      <a href="login.html" id="authLink">Login</a>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">WELCOME TO TOONVERSE</p>
+      <h1>Your world of cartoons, stories and fun.</h1>
+      <p>Discover popular cartoons, read interesting blogs, and save your favorite characters in one place.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="cartoons.html">Explore Cartoons</a>
+        <a class="btn btn-outline" href="blog.html">Read Blogs</a>
+      </div>
+    </div>
+    <div class="hero-art">TOON<br>VERSE</div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">FEATURED</p>
+        <h2>Popular Cartoons</h2>
+      </div>
+      <a href="cartoons.html">View all</a>
+    </div>
+    <div id="featuredGrid" class="card-grid"></div>
+  </section>
+
+  <section class="section categories">
+    <p class="eyebrow">EXPLORE</p>
+    <h2>Find your favorite type</h2>
+    <div class="category-grid">
+      <a href="cartoons.html?category=Anime">Anime</a>
+      <a href="cartoons.html?category=Comedy">Comedy</a>
+      <a href="cartoons.html?category=Adventure">Adventure</a>
+      <a href="cartoons.html?category=Superhero">Superhero</a>
+      <a href="cartoons.html?category=Classic">Classic</a>
+      <a href="cartoons.html?category=Fantasy">Fantasy</a>
+    </div>
+  </section>
+
+  <section class="section about-box">
+    <div>
+      <p class="eyebrow">ABOUT THE PROJECT</p>
+      <h2>A simple cartoon blogging experience.</h2>
+      <p>ToonVerse is a frontend web application made with HTML, CSS and JavaScript. User preferences such as favorites are stored in the browser using LocalStorage.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 ToonVerse | Web Application Development Project</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
